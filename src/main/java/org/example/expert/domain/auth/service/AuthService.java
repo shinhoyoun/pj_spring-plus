@@ -37,6 +37,7 @@ public class AuthService {
 
         User newUser = new User(
                 signupRequest.getEmail(),
+                signupRequest.getNickname(),
                 encodedPassword,
                 userRole
         );
