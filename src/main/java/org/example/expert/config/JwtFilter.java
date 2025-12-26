@@ -33,6 +33,7 @@ public class JwtFilter implements Filter {
         String url = httpRequest.getRequestURI();
 
         if (url.startsWith("/auth")) {
+//        if (url.startsWith("/todo")) {  // 로스 테스트용으로 임시 작성
             chain.doFilter(request, response);
             return;
         }
