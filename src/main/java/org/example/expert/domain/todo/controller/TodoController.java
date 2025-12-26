@@ -31,7 +31,7 @@ public class TodoController {
 //    private static final Logger log = LoggerFactory.getLogger(TodoController.class);
 
     private final TodoService todoService;
-    private final TodoRepository todoRepository;
+//    private final TodoRepository todoRepository;
 
     @PostMapping("/todos")
     public ResponseEntity<TodoSaveResponse> saveTodo(
